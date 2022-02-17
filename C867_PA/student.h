@@ -8,14 +8,32 @@ public:
 	Student(string studentID, string firstName, string lastName, string email, int age, int daysLeft[], DegreeProgram degreeProgram);
 	~Student();
 
-	const static int dayArray = 3;//needed to define the array
 
 	/*		Getters and Setters		*/
 
 	//setters
 
-	string setID(string);
+	void setID(string ID);
+	void setFirstName(string fname);
+	void setLastName(string lname);
+	void setEmail(string E);
+	void setAge(int A);
+	void setDaysLeft(int DaysLeft[3]);//might not work
+	void setDegree(DegreeProgram DP);
+	
+	//getters
 
+	string getID();
+	string getFirstName();
+	string getLastName();
+	string getEmail();
+	int getAge();
+	int getDaysLeft();//might not work
+	DegreeProgram getDegreeProgram();
+
+
+	void print();//spits out
+	
 
 private:
 	string studentID;
@@ -23,6 +41,6 @@ private:
 	string lastName;
 	string email;
 	int age;
-	int daysLeft[dayArray];
+	int daysLeft[3];
 	DegreeProgram degreeProgram;
 };
