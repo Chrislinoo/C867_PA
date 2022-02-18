@@ -4,7 +4,6 @@
 class Student {
 	/*		constructor and destructor		*/
 public:
-	//Student();//created the definition in student.cpp
 	Student(string studentID, string firstName, string lastName, string email, int age, int daysLeft[], DegreeProgram degreeProgram);
 	~Student();
 

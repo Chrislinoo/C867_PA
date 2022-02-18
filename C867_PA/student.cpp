@@ -30,51 +30,61 @@ Student::~Student()
 	/*		setters		*/
 
 void Student::setID(string ID){
-	ID = studentID
+	
+	this->studentID = ID
 }
 
 void Student::setFirstName(string fname){
-	fname = firstName
+	
+	this->firstName = fname
 }
 
 void Student::setLastName(string lname){
-	lname = lastName
+	
+	this->lastName = lname
 }
 
 void Student::setEmail(string E){
-	E = email
+	
+	this->email = E
 }
 
 void Student::setAge(int A){
-	A = age
+	
+	this->age = A
 }
 
-void Student::setDaysLeft(int DL [3]){//might not be right
-	for (int i = 0; i < 3; i++) DL = daysLeft;
+void Student::setDaysLeft(int DL []){//might not be right
+	
+	for (int i = 0; i < 3; i++) this->daysLeft[] = DL[]
+	/*this->daysLeft[0] = DL[0];
+	this->daysLeft[1] = DL[1];
+	this->daysLeft[2] = DL[2];*/
 }
 
 void Student::setDegree(DegreeProgram DP){
-	DP = degreeProgram
+
+	this->degreeProgram = DP
 }
 
 string Student::getID()
 {
-	return string(studentID);
+	return studentID;
 }
 
 string Student::getFirstName()
 {
-	return string(firstName);
+	return firstName;
 }
 
 string Student::getLastName()
 {
-	return string(lastName);
+	return lastName;
 }
 
 string Student::getEmail()
 {
-	return string(email);
+	return email;
 }
 
 int Student::getAge()
@@ -84,7 +94,9 @@ int Student::getAge()
 
 int Student::getDaysLeft()
 {
-	return DL;//might not be right
+	return daysLeft[0];
+	return daysLeft[1];
+	return daysLeft[2];
 }
 
 DegreeProgram Student::getDegreeProgram()
@@ -94,7 +106,7 @@ DegreeProgram Student::getDegreeProgram()
 
 void Student::print(){
 	cout << getID() << '/t' << getFirstName() << '/t' << getLastName << '/t' << getEmail << '/t';
-	cout << getAge << '/t' << getDaysLeft()[0] << "," << getDaysLeft()[1] << "," << getDaysLeft()[2] << '/t';
+	cout << getAge << '/t' << getDaysLeft[0] << "," << getDaysLeft[1] << "," << getDaysLeft[2] << '/t';
 	cout << getDegreeProgram(degreeProgram) << endl;
 }
 
