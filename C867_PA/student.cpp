@@ -18,7 +18,7 @@ Student::Student(string studentID, string firstName, string lastName, string ema
 {
 	this->studentID = studentID; this->firstName = firstName; this->lastName = lastName; this->email = email;
 	this->age = age;
-	for (int i = 0; i < 3; i++;) this->daysLeft[i] = daysLeft[i];
+	for (int i = 0; i < 3; i++) this->daysLeft[i] = daysLeft[i];
 	this->degreeProgram = degreeProgram;
 }
 
@@ -29,42 +29,40 @@ Student::~Student()
 	
 	/*		setters		*/
 
-void Student::setID(string ID){
-	
-	this->studentID = ID
+void Student::setID(string ID) {
+
+	this->studentID = ID;//variables on the right side
 }
 
 void Student::setFirstName(string fname){
 	
-	this->firstName = fname
+	this->firstName = fname;
 }
 
 void Student::setLastName(string lname){
 	
-	this->lastName = lname
+	this->lastName = lname;
 }
 
 void Student::setEmail(string E){
 	
-	this->email = E
+	this->email = E;
 }
 
 void Student::setAge(int A){
 	
-	this->age = A
+	this->age = A;
 }
 
 void Student::setDaysLeft(int DL []){//might not be right
 	
-	for (int i = 0; i < 3; i++) this->daysLeft[] = DL[]
-	/*this->daysLeft[0] = DL[0];
-	this->daysLeft[1] = DL[1];
-	this->daysLeft[2] = DL[2];*/
+	for (int i = 0; i < 3; i++) this->daysLeft[i] = DL[i];
+	
 }
 
 void Student::setDegree(DegreeProgram DP){
 
-	this->degreeProgram = DP
+	this->degreeProgram = DP;
 }
 
 string Student::getID()
@@ -105,8 +103,8 @@ DegreeProgram Student::getDegreeProgram()
 }
 
 void Student::print(){
-	cout << getID() << '/t' << getFirstName() << '/t' << getLastName << '/t' << getEmail << '/t';
-	cout << getAge << '/t' << getDaysLeft[0] << "," << getDaysLeft[1] << "," << getDaysLeft[2] << '/t';
-	cout << getDegreeProgram(degreeProgram) << endl;
+	cout << getID() << '\t' << getFirstName() << '\t' << getLastName() << '\t' << email << '\t';
+	cout << age << '\t' << daysLeft[0] << "," << daysLeft[1] << "," << daysLeft[2] << '\t';
+	cout << degreeProgram << endl;// here we can call the return variable or the function call , its the same output anyways. Always remember the () for functions.
 }
 

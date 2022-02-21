@@ -11,9 +11,16 @@ int main() {
 	"A4,Erin,Black,Erin.black@comcast.net,22,50,58,40,SECURITY",
 	"A5,Christopher,Paulino Hernandez,cpaul76@gmail.com,24,30,45,37,SOFTWARE" }; //This is the data for the roster table in the project
 	
-	cout << "C876: Scripting & Programming Applications, Student ID: #006785967, C++, Christopher Paulino Hernandez";
+	cout << "C867: Scripting & Programming Applications, Student ID: #006785967, C++, Christopher Paulino Hernandez" << endl;
 
+	Roster classRoster;
 	
+	
+	for (int i = 0; i < 5; i++) {
+		classRoster.parse(studentData[i]);
+	}
+
+	classRoster.printAll();
 
 
 

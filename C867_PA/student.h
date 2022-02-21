@@ -1,9 +1,13 @@
 #pragma once
 #include "degree.h"
+#include <iostream>
+
+using namespace std;
 
 class Student {
 	/*		constructor and destructor		*/
 public:
+	Student();//did need a constructor after all!
 	Student(string studentID, string firstName, string lastName, string email, int age, int daysLeft[], DegreeProgram degreeProgram);
 	~Student();
 
@@ -17,7 +21,7 @@ public:
 	void setLastName(string lname);
 	void setEmail(string E);
 	void setAge(int A);
-	void setDaysLeft(int DaysLeft[3]);//might not work
+	void setDaysLeft(int DaysLeft[3]);//might not work -- actually did work :)
 	void setDegree(DegreeProgram DP);
 	
 	//getters
@@ -27,7 +31,7 @@ public:
 	string getLastName();
 	string getEmail();
 	int getAge();
-	int getDaysLeft();//might not work
+	int getDaysLeft();
 	DegreeProgram getDegreeProgram();
 
 
