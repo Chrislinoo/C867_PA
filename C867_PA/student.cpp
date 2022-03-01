@@ -92,6 +92,7 @@ int Student::getAge()
 
 int Student::getDaysLeft()
 {
+	int AVG = (daysLeft[0] + daysLeft[1] + daysLeft[2]) / 3;
 	return daysLeft[0];
 	return daysLeft[1];
 	return daysLeft[2];
@@ -101,7 +102,12 @@ DegreeProgram Student::getDegreeProgram()
 {
 	return DegreeProgram();
 }
-
+//experiment
+int Student::avg()
+{
+	return { (daysLeft[0] + daysLeft[1] + daysLeft[2]) / 3 };
+}
+//experiment
 void Student::print(){
 
 	cout << getID() << '\t' << getFirstName() << '\t' << getLastName() << '\t';

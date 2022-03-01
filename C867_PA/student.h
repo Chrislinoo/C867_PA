@@ -34,6 +34,9 @@ public:
 	int getDaysLeft();
 	DegreeProgram getDegreeProgram();
 
+	//experiment
+	int avg();
+
 
 	void print();//spits out
 	

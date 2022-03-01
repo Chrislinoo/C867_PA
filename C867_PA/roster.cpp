@@ -91,12 +91,18 @@ void Roster::remove(string studentID) {//student id already equals A3 bc we set 
 
 void Roster::printAverageDaysInCourse(string studentID) {
 	for (int i = 0; i < 5; i++) {
-
+		if (classRosterArray[i]->getID() == studentID) {
+			cout << "Student ID: " << studentID << ", average days in course is: " << classRosterArray[i]->avg();
+			cout << endl ;
+		}
 	}
 
 }
 
 void Roster::printByDegreeProgram(DegreeProgram degreeProgram) {
-
+	for (int i = 0; i < 5; i++) {
+		if (classRosterArray[i]->getDegreeProgram() == degreeProgram) this->classRosterArray[i]->print();
+		
+	}
 
 }

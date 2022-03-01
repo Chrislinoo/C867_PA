@@ -18,6 +18,8 @@ int main() {
 	cout << endl;
 
 	Roster classRoster{};
+
+	cout << "Displaying all students:" << endl;
 	
 	for (int i = 0; i < 5; i++) {
 		classRoster.parse(studentData[i]);
@@ -34,13 +36,25 @@ int main() {
 	
 	cout << endl;
 
-	classRoster.printAverageDaysInCourse("A1");
+	for (int i = 0; i < 5; i++) {
+		classRoster.printAverageDaysInCourse(classRoster.classRosterArray[i]->getID());
+	}
+	cout << endl;
 
-	classRoster.remove("A3");
+	cout << "Showing students in degree program: SOFTWARE" << endl << endl;
 
-	classRoster.printAll();
+	classRoster.printByDegreeProgram(SOFTWARE);
 
-	classRoster.remove("A3");
+	
+	
+	
+	//classRoster.remove("A3");
+
+	//classRoster.printAll();
+
+	//cout << endl;
+
+	//classRoster.remove("A3");
 
 
 
