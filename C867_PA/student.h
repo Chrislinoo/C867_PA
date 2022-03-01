@@ -21,7 +21,7 @@ public:
 	void setLastName(string lname);
 	void setEmail(string E);
 	void setAge(int A);
-	void setDaysLeft(int DaysLeft[3]);//might not work -- actually did work :)
+	void setDaysLeft(int DaysLeft[]);//might not work -- actually did work :)
 	void setDegree(DegreeProgram DP);
 	
 	//getters

@@ -103,8 +103,10 @@ DegreeProgram Student::getDegreeProgram()
 }
 
 void Student::print(){
-	cout << getID() << '\t' << getFirstName() << '\t' << getLastName() << '\t' << email << '\t';
-	cout << age << '\t' << daysLeft[0] << "," << daysLeft[1] << "," << daysLeft[2] << '\t';
+
+	cout << getID() << '\t' << getFirstName() << '\t' << getLastName() << '\t';
+	cout << age << '\t' << "{" << daysLeft[0] << "," << daysLeft[1] << "," << daysLeft[2] << "}" << '\t';
 	cout << degreeProgram << endl;// here we can call the return variable or the function call , its the same output anyways. Always remember the () for functions.
+	
 }
 

@@ -15,7 +15,7 @@ public:
 	classRosterArray[3] = "A4,Erin,Black,Erin.black@comcast.net,22,50,58,40,SECURITY";
 	classRosterArray[4] = "A5,Christopher,Paulino Hernandez,cpaul76@gmail.com,24,30,45,37,SOFTWARE";*/
 
-	Student* classRosterArray[5];//student class array in the roster class with 5 indices to stroe the data in the data table 
+	Student* classRosterArray[5] = {NULL,NULL,NULL,NULL,NULL};//student class array in the roster class with 5 indices to store the data in the data table 
 
 
 	void parse(string row);
