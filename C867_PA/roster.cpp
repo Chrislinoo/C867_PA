@@ -100,9 +100,49 @@ void Roster::printAverageDaysInCourse(string studentID) {
 }
 
 void Roster::printByDegreeProgram(DegreeProgram degreeProgram) {
+	if (degreeProgram == DegreeProgram::SOFTWARE){
+		classRosterArray[2]->print();
+		classRosterArray[4]->print();
+		return;
+	};
+	
+	if (degreeProgram == DegreeProgram::SECURITY) {
+		classRosterArray[0]->print();
+		classRosterArray[3]->print();
+		return;
+	};
+
+	if (degreeProgram == DegreeProgram::NETWORK) {
+		classRosterArray[1]->print();
+		return;
+	};
+
+	
+}
+
+
+
+/*void Roster::printByDegreeProgram(DegreeProgram degreeProgram) {
 	for (int i = 0; i < 5; i++) {
-		if (classRosterArray[i]->getDegreeProgram() == degreeProgram) this->classRosterArray[i]->print();
-		
+		//DegreeProgram degree = this->classRosterArray[i]->getDegreeProgram();
+		if (classRosterArray[i]->getDegreeProgram() == degreeProgram) {
+			classRosterArray[i]->print();
+		};
+	}*/
+
+
+/*void Roster::printInvalidEmails() {
+	
+	bool any = false; 
+		for (int i = 0; i < 5; i++) {
+			string DP = this->classRosterArray[i]->get;
+			if ((email.find(" ") != string::npos) || (email.find("@") == string::npos) || (email.find(".") == string::npos)) //dont want spaces
+//i do want an @ and ","
+			{
+				any = true; 
+				cout << email << endl;
+
+			}
 	}
 
-}
+}*/

@@ -42,19 +42,21 @@ int main() {
 	cout << endl;
 
 	cout << "Showing students in degree program: SOFTWARE" << endl << endl;
-
+	
 	classRoster.printByDegreeProgram(SOFTWARE);
-
+	cout << endl << endl;
 	
 	
-	
-	//classRoster.remove("A3");
+	cout << "Removing A3:" << endl << endl;
+	classRoster.remove("A3");
 
-	//classRoster.printAll();
+	classRoster.printAll();
 
-	//cout << endl;
+	cout << endl;
 
-	//classRoster.remove("A3");
+	cout << "Removing A3 again..." << endl << endl;
+	classRoster.remove("A3");
+	cout << "DONE.";
 
 
 
